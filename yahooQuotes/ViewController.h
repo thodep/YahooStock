@@ -8,8 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITextFieldDelegate>
+// UITextField
+@property(strong,nonatomic) UITextField *textField;
+//String
 
+@property(strong,nonatomic)NSString *quotes;
+
+//UILabel
+@property(strong,nonatomic)UILabel *myLabel;
+
+//quote method
+-(void)getQuotes;
 
 @end
 
